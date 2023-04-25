@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PointsCounter.Classes
 {
-    internal class GamePlayers
+    public class GamePlayers
     {
         private string id;
         private string gameId;
