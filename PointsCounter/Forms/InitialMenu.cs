@@ -13,6 +13,7 @@ namespace PointsCounter.Forms
 {
     public partial class InitialMenu : Form
     {
+        
         public InitialMenu()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace PointsCounter.Forms
             Games game1 = new Games();
             game1.Name = GameNameTextBox.Text;
             this.Hide();
-            StartMenu form = new StartMenu();
+            StartMenu form = new StartMenu(game1);
             form.Show();
         }
 

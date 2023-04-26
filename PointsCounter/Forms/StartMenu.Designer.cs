@@ -34,12 +34,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(357, 148);
+            this.label1.Location = new System.Drawing.Point(236, 117);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 15);
+            this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "123";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // StartMenu
             // 
@@ -49,6 +49,7 @@
             this.Controls.Add(this.label1);
             this.Name = "StartMenu";
             this.Text = "StartMenu";
+            this.Load += new System.EventHandler(this.StartMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
