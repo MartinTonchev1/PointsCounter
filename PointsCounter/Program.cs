@@ -1,5 +1,5 @@
 using PointsCounter.Forms;
-using PointsCounter.Classes;
+using PointsCounter.Models;
 
 namespace PointsCounter
 {

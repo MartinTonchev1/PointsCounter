@@ -31,6 +31,7 @@
             this.createGame = new System.Windows.Forms.Button();
             this.GameNameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.seeMatchHistory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // createGame
@@ -60,11 +61,22 @@
             this.label1.Text = "Name of the game:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // seeMatchHistory
+            // 
+            this.seeMatchHistory.Location = new System.Drawing.Point(345, 294);
+            this.seeMatchHistory.Name = "seeMatchHistory";
+            this.seeMatchHistory.Size = new System.Drawing.Size(106, 43);
+            this.seeMatchHistory.TabIndex = 3;
+            this.seeMatchHistory.Text = "Match history";
+            this.seeMatchHistory.UseVisualStyleBackColor = true;
+            this.seeMatchHistory.Click += new System.EventHandler(this.seeMatchHistory_Click);
+            // 
             // InitialMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.seeMatchHistory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GameNameTextBox);
             this.Controls.Add(this.createGame);
@@ -81,5 +93,6 @@
         private Button createGame;
         private TextBox GameNameTextBox;
         private Label label1;
+        private Button seeMatchHistory;
     }
 }

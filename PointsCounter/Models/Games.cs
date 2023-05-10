@@ -8,13 +8,14 @@ namespace PointsCounter.Models
 {
     public class Games
     {
-        private string id;
+        private int id;
         private string name;
         private DateTime startDate;
         private DateTime endDate;
         private string winnerId;
+        private List<GamePlayers> gamePlayers = new List<GamePlayers>();
 
-        public string Id
+        public int Id
         {
             get { return id; }
             set { id = value; }
@@ -38,6 +39,11 @@ namespace PointsCounter.Models
         {
             get { return winnerId; }
             set { winnerId = value; }
+        }
+        public List<GamePlayers> GamePlayers
+        {
+            get { return gamePlayers; }
+            set { gamePlayers = value; }
         }
     }
 }

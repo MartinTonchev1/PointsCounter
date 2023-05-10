@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PointsCounter.Classes;
+using PointsCounter.Models;
 
 namespace PointsCounter.Forms
 {
@@ -36,6 +36,13 @@ namespace PointsCounter.Forms
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void seeMatchHistory_Click(object sender, EventArgs e)
+        {
+            MatchHistory matchHistory = new MatchHistory();
+            matchHistory.Show();
+            this.Hide();
         }
     }
 }

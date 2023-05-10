@@ -8,17 +8,17 @@ namespace PointsCounter.Models
 {
     public class GamePlayers
     {
-        private string id;
-        private string gameId;
+        private int id;
+        private int gameId;
         private string playerName;
         private int playerPoints;
 
-        public string Id
+        public int Id
         {
             get { return id; }
             set { id = value; }
         }
-        public string GameId
+        public int GameId
         {
             get { return gameId; }
             set { gameId = value; }
@@ -32,6 +32,14 @@ namespace PointsCounter.Models
         {
             get { return playerPoints; }
             set { playerPoints = value; }
+        }
+
+        public GamePlayers(int id, int gameId, string playerName, int playerPoints)
+        {
+            this.id = id;
+            this.gameId = gameId;
+            this.playerName = playerName;
+            this.playerPoints = playerPoints;
         }
     }
 }
